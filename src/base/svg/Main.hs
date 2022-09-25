@@ -4,13 +4,17 @@
 module Main where
 
 import SvgIcons.Core.Render
-import SvgIcons.Images.Mosaics
+import SvgIcons.Images
+import           Text.Blaze.Svg11 ((!))
+import           Text.Blaze.Svg11 as S
+import           Text.Blaze.Svg11.Attributes as A
 
 
 
 main :: IO ()
 main = do
   renderMosaics
+  renderToReact
 
 
 
@@ -32,4 +36,13 @@ renderMosaics =
     , (,) "wiresMosaic"        (wiresMosaic  "gray")
     , (,) "curvesMosaic"        curvesMosaic
     , (,) "airplaneMosaic"     (airplaneMosaic "deepskyblue")
+    ]
+
+
+renderToReact :: IO ()
+renderToReact =
+  renderSvgReact
+    "./src/assets/svg/"
+    [ (,) "flagES" (es ! A.preserveaspectratio "xMidYMid slice")
+    , (,) "flagUK" (uk ! A.preserveaspectratio "xMidYMid slice")
     ]
