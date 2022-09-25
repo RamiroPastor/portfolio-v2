@@ -22,7 +22,7 @@ export function LangContextProvider(props) {
   return (
     <LangContext.Provider
       value={
-        { lang: i18n.lng
+        { lang: i18n ? i18n.language : ""
         , t
         , saveLang
         }

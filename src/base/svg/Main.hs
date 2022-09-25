@@ -20,6 +20,7 @@ renderMosaics =
   renderSvgFiles 
     "./src/assets/mosaics/"
     [ (,) "nazariMosaic"       (nazariMosaic "mistyrose" "gainsboro")
+    , (,) "mosaicPajarita"     (nazariMosaic "white"     "transparent")
     , (,) "triReligiousMosaic" (triReligiousMosaic "transparent" "orange" "green")
     , (,) "hexagonsMosaic"     (hexagonsMosaic "navy" "none")
     , (,) "beehiveMosaic"       beehiveMosaic

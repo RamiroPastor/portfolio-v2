@@ -1,8 +1,9 @@
 import React from "react";
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 
 import { LangContextProvider } from "core/contexts/LangContext";
+import { Home } from "pages/Home/Home";
 import './i18n';
 
 
@@ -11,13 +12,14 @@ function App() {
 
   const {t, i18n} = useTranslation(["translation"]);
 
-  console.log(i18n.lng);
 
   return (
     <Router>
       <LangContextProvider props={{t, i18n}}>
         <div className="App">
-          HOLA MUNDO
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes>
         </div>
       </LangContextProvider>
     </Router>
