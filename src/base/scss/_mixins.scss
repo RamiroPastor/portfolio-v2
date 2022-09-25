@@ -1,7 +1,7 @@
 // Mixins
 
 @mixin customScrollbar {
-  $scrollbarColor: rgb(160, 190, 220);
+  $scrollbarColor: rgb(120, 150, 220);
   $scrollbarBackground: rgb(240, 240, 240);
   scrollbar-width: thin;
   scrollbar-color: $scrollbarColor $scrollbarBackground;

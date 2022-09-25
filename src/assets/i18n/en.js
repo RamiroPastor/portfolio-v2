@@ -5,22 +5,7 @@ export const en =
   , curriculum: "curriculum"
   , contact: "contact"
   // Home page
-  , welcome: "Welcome to the personal site of"
-  , imNice: "I'm nice, but introverted"
-  , imLazy: "I am creative but I work hard"
-  , jokeLine1: "Someone stole my Microsoft Office and they're gonna pay."
-  , jokeLine2: "You have my Word."
-  , likes: "Likes:"
-  , games: "Games"
-  , youtubeVideos: "Watching videos on youtube"
-  , music: "Classical music (or others)"
-  , sleepAndEat: "Sleeping and eating"
-  , dislikes: "Dislikes:"
-  , socialMedia: "Social media"
-  , manipulativePeople: "Manipulative people"
-  , tv: "Television (except TVE)"
-  , advertising: "Advertising"
-  // curriculum
+  // Curriculum
   , cvDesc1: "Mathematician, programmer and web developer (UX/UI & frontend)."
   , cvDesc2: "Self-taught, creative, perfectionist; I achieve simple and elegant solutions. I love clean, concise and reusable code."
   , cvDesc3: "Check my online portfolio to see what I can do, you will find the source code in my github."
@@ -47,7 +32,6 @@ export const en =
   , native: "Native"
   , professional: "Professional"
   , beginner: "Beginner"
-  , contactMe: "Contact Me!"
   // Learning
   , go: "go"
   , projectGoT: "Team project with React; fetches game of thrones external api"

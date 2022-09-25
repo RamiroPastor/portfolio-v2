@@ -5,22 +5,7 @@ export const es =
   , curriculum: "currículo"
   , contact: "contacto"
   // Home page
-  , welcome: "Bienvenido/a a la página personal de"
-  , imNice: "Soy afable, pero introvertido"
-  , imLazy: "Soy creativo pero trabajo duro"
-  , jokeLine1: "—Doctor, tengo todo el cuerpo cubierto de pelo. ¿Qué padezco?"
-  , jokeLine2: "—Padece uzté un ozito."
-  , likes: "Aficiones:"
-  , games: "Los juegos"
-  , youtubeVideos: "Ver vídeos en youtube"
-  , music: "Escuchar música (clásica u otras)"
-  , sleepAndEat: "Dormir y comer"
-  , dislikes: "Cosas que no me gustan:"
-  , socialMedia: "Las redes sociales"
-  , manipulativePeople: "La gente manipuladora"
-  , tv: "La televisión (excepto RTVE)"
-  , advertising: "La publicidad"
-  // curriculum
+  // Curriculum
   , cvDesc1: "Matemático, programador y desarrollador web (UX/UI y frontend)."
   , cvDesc2: "Autodidacta, creativo, perfeccionista; encuentro soluciones sencillas y elegantes. Me gusta el código limpio, conciso y reutilizable."
   , cvDesc3: "Visita mi portfolio online para ver lo que puedo hacer, encontrarás el código fuente en mi github."
@@ -47,7 +32,6 @@ export const es =
   , native: "Nativo"
   , professional: "Profesional"
   , beginner: "Principiante"
-  , contactMe: "¡Contactame!"
   // Learning
   , go: "ir"
   , projectGoT: "Proyecto en equipo con React; utiliza una api externa de juego de tronos"
