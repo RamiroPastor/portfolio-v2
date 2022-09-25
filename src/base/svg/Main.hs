@@ -18,6 +18,7 @@ main = do
   renderMosaics
   renderToCv
   renderToReact
+  renderImages
 
 
 
@@ -58,17 +59,30 @@ renderToReact =
     "./src/assets/svg/"
     [ (,) "flagES" (es ! A.preserveaspectratio "xMidYMid slice")
     , (,) "flagUK" (uk ! A.preserveaspectratio "xMidYMid slice")
+    , (,) "myLogo" myLogo
     ]
 
 
+renderImages :: IO ()
+renderImages =
+  renderSvgFiles
+    "./src/assets/img/"
+    [ (,) "favicon" myLogo
+    ]
+
+
+
+
   
-logo :: Svg
-logo =
+myLogo :: Svg
+myLogo =
     svg
       ! A.viewbox "-1 -1 2 2"
       ! A.height "100px"
       ! A.width  "100px"
       $ do
-        regularPolygon 5 1.9 (0,0)
+        regularPolygon 5 0.85 (0,0)
           ! A.stroke "deeppink"
           ! (A.strokeWidth "0.05")
+          ! A.fill "none"
+          ! A.transform (rotateAround 180 0 0)

@@ -13,15 +13,10 @@
   box-shadow: 0 3px 15px 1px rgba(0,0,0,0.15);
   &__inner {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 2 * $headerH;
+    height: $headerH;
     width: 100%;
     max-width: $maxW;
-    @include landscape {
-      flex-direction: row;
-      height: $headerH;
-    }
   }
 }

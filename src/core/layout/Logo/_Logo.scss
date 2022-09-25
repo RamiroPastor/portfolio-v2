@@ -1,0 +1,10 @@
+.Logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  svg {
+    height: $headerH;
+    width:  $headerH;
+    margin-right: 1rem;
+  }
+}

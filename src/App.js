@@ -22,10 +22,12 @@ function App() {
         <div className="App">
           <Header/>
           <LangNav/>
-          <Routes>
-            <Route path="/cv" element={<Cv/>}/>
-            <Route path="/"   element={<Home/>}/>
-          </Routes>
+          <main>
+            <Routes>
+              <Route path="/cv" element={<Cv/>}/>
+              <Route path="/"   element={<Home/>}/>
+            </Routes>
+          </main>
         </div>
       </LangContextProvider>
     </Router>
