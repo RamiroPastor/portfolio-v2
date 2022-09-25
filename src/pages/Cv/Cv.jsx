@@ -1,9 +1,8 @@
+import React, { useContext } from "react";
 
-import React from "react";
 
-
-import cambridgeImgUrl      from "assets/cv/cambridge.svg";
-import emailImgUrl          from "assets/cv/email.svg";
+import cambridgeImgUrl      from "assets/cv/cambridge.jpg";
+import emailImgUrl          from "../../assets/cv/email.svg";
 import langEnImgUrl         from "assets/cv/langEN.png";
 import langEsImgUrl         from "assets/cv/langES.png";
 import langFrImgUrl         from "assets/cv/langFR.svg";
@@ -28,13 +27,12 @@ import skillTopologyImgUrl  from "assets/cv/skillTopologia.png";
 // import socialGitlabImgUrl   from "../../assets/cv/socialGitlab.png";
 // import socialLinkedinImgUrl from "../../assets/cv/socialLinkedin.png";
 // import socialSoImgUrl       from "../../assets/cv/socialStackoverflow.png";
-import stmichaelsImgUrl     from "../../assets/cv/stmichaels.png";
-import ucmImgUrl            from "../../assets/cv/ucm.png";
-import upgradehubImgUrl     from "../../assets/cv/upgradehub.png";
-import utretchImgUrl        from "../../assets/cv/utretch.png";
-import webImgUrl            from "../../assets/cv/web.svg";
-
-import { Nav } from "../../core/Nav/Nav";
+import stmichaelsImgUrl     from "assets/cv/stmichaels.png";
+import ucmImgUrl            from "assets/cv/ucm.png";
+import upgradehubImgUrl     from "assets/cv/upgradehub.png";
+import utretchImgUrl        from "assets/cv/utretch.png";
+import webImgUrl            from "assets/cv/web.svg";
+import { LangContext } from "core/contexts/LangContext";
 
 
 const cambridgeImg      = <img alt="" title=""                 src={cambridgeImgUrl}/>;
@@ -43,7 +41,7 @@ const langEnImg         = <img alt="" title=""                 src={langEnImgUrl
 const langEsImg         = <img alt="" title=""                 src={langEsImgUrl}/>;
 const langFrImg         = <img alt="" title=""                 src={langFrImgUrl}/>;
 const locationImg       = <img alt="" title="Location"         src={locationImgUrl}/>;
-const myPhotoImg        = <img alt="" className="Cv1__myPhoto" src={myPhotoImgUrl}/>;
+const myPhotoImg        = <img alt="" className="Cv__myPhoto"  src={myPhotoImgUrl}/>;
 const skillAngularImg   = <img alt="" title=""                 src={skillAngularImgUrl}/>;
 const skillCssImg       = <img alt="" title=""                 src={skillCssImgUrl}/>;
 const skillDockerImg    = <img alt="" title=""                 src={skillDockerImgUrl}/>;
@@ -75,9 +73,9 @@ const webImg            = <img alt="" title="Personal site"    src={webImgUrl}/>
 function studies(img$$, info, dates, entity) {
 
   return(
-    <div className="Cv1__study">
+    <div className="Cv__study">
       {img$$}
-      <div className="Cv1__studyInfo">
+      <div className="Cv__studyInfo">
           <div>
               <h4>{info}</h4>
               <span>{dates}</span>
@@ -92,7 +90,7 @@ function studies(img$$, info, dates, entity) {
 function work(heading, dates, location, info) {
 
   return(
-    <div className="Cv1__workInfo">
+    <div className="Cv__workInfo">
         <div>
             <h4>{heading}</h4>
             <span>{dates}</span>
@@ -109,15 +107,15 @@ function skill(img$$, name, level) {
   let stars = "";
   switch (level) {
     case 1:
-      stars = <em className="Cv1__lowSkill"   >★☆☆☆☆</em>; break;
+      stars = <em className="Cv__lowSkill"   >★☆☆☆☆</em>; break;
     case 2:
-      stars = <em className="Cv1__mediumSkill">★★☆☆☆</em>; break;
+      stars = <em className="Cv__mediumSkill">★★☆☆☆</em>; break;
     case 3:
-      stars = <em className="Cv1__mediumSkill">★★★☆☆</em>; break;
+      stars = <em className="Cv__mediumSkill">★★★☆☆</em>; break;
     case 4:
-      stars = <em className="Cv1__highSkill"  >★★★★☆</em>; break;
+      stars = <em className="Cv__highSkill"  >★★★★☆</em>; break;
     default:
-      stars = <em className="Cv1__highSkill"  >★★★★★</em>; break;
+      stars = <em className="Cv__highSkill"  >★★★★★</em>; break;
   }
 
   return(
@@ -157,33 +155,31 @@ function social(img$$, platform, url) {
  */
 
 
-export function Cv1(props) {
+export function Cv(props) {
 
-  // const [showPhone, setShowPhone] = useState(false);
+  const t = useContext(LangContext).t;
   
   return(
-    <div className="Cv1__background">
-    <div className="Cv1__foreground">
+    <div className="Cv__background">
+    <div className="Cv__foreground">
 
-      <Nav t={props.t}/>
-
-      <article className="Cv1">
+      <article className="Cv">
         
-        <section className="Cv1__header">
-          <div className="Cv1__myPhotoWrapper">{myPhotoImg}</div>
-          <div className="Cv1__personal">
-            <div className="Cv1__personalDescription">
+        <section className="Cv__header">
+          <div className="Cv__myPhotoWrapper">{myPhotoImg}</div>
+          <div className="Cv__personal">
+            <div className="Cv__personalDescription">
               <h1>Ramiro Pastor Martín</h1>
-              <p>{props.t("cvDesc1")}</p>
-              <p>{props.t("cvDesc2")}</p>
-              <p>{props.t("cvDesc3")}</p>
+              <p>{t("cvDesc1")}</p>
+              <p>{t("cvDesc2")}</p>
+              <p>{t("cvDesc3")}</p>
             </div>
-            <div className="Cv1__personalInfoWrapper">
-              <a className="Cv1__personalInfo" href={"mailto:" + process.env.REACT_APP_MYEMAIL}>
+            <div className="Cv__personalInfoWrapper">
+              <a className="Cv__personalInfo" href={"mailto:" + process.env.REACT_APP_MYEMAIL}>
                   {emailImg}
                   <span>{process.env.REACT_APP_MYEMAIL}</span>
               </a>
-              {/* <div className="Cv1__personalInfo">
+              {/* <div className="Cv__personalInfo">
                   {whatsappImg}
                   <span>
                     { showPhone 
@@ -192,42 +188,42 @@ export function Cv1(props) {
                     }
                   </span>
               </div> */}
-              <div className="Cv1__personalInfo">
+              <div className="Cv__personalInfo">
                   {locationImg}
-                  <span>{props.t("cvLocation")}</span>
+                  <span>{t("cvLocation")}</span>
               </div>
-              <a className="Cv1__personalInfo" href="https://ramiropastor.es">
+              <a className="Cv__personalInfo" href={process.env.REACT_APP_PORTFOLIO_URL}>
                   {webImg}
-                  <span>https://ramiropastor.es</span>
+                  <span>{process.env.REACT_APP_PORTFOLIO_URL}</span>
               </a>
             </div>
           </div>
         </section>
 
-        <section className="Cv1__body">
+        <section className="Cv__body">
 
-          <aside className="Cv1__sidebar">
-            {/* <div className="Cv1__social">
-              <h3 className="Cv1__sectionHeader">{props.t("social")}</h3>
-              <ul className="Cv1__socialList">
+          <aside className="Cv__sidebar">
+            {/* <div className="Cv__social">
+              <h3 className="Cv__sectionHeader">{t("social")}</h3>
+              <ul className="Cv__socialList">
                 {social(socialSoImg      , "Stackoverflow", "https://stackoverflow.com/users/3927886"                    )}
                 {social(socialGithubImg  , "Github"       , "https://github.com/RamiroPastor"                            )}
                 {social(socialGitlabImg  , "Gitlab"       , "https://gitlab.com/Moch"                                    )}
                 {social(socialLinkedinImg, "LinkedIn"     , "https://www.linkedin.com/in/ramiro-pastor-martin-2a4187125/")}
               </ul>
             </div> */}
-            <div className="Cv1__langs">
-              <h3 className="Cv1__sectionHeader">{props.t("languages")}</h3>
-              <ul className="Cv1__langList">
-                {language(langEsImg, props.t("spanish"), props.t("native"))}
-                {language(langEnImg, props.t("english"), props.t("professional"))}
-                {language(langFrImg, props.t("french") , props.t("beginner"))}
+            <div className="Cv__langs">
+              <h3 className="Cv__sectionHeader">{t("languages")}</h3>
+              <ul className="Cv__langList">
+                {language(langEsImg, t("spanish"), t("native"))}
+                {language(langEnImg, t("english"), t("professional"))}
+                {language(langFrImg, t("french") , t("beginner"))}
               </ul>
             </div>
-            <div className="Cv1__skills">
-              <h3 className="Cv1__sectionHeader">{props.t("skills")}</h3>
-              <ul className="Cv1__skillList">
-                {skill(skillTopologyImg, props.t("topology") , 4)}
+            <div className="Cv__skills">
+              <h3 className="Cv__sectionHeader">{t("skills")}</h3>
+              <ul className="Cv__skillList">
+                {skill(skillTopologyImg, t("topology") , 4)}
                 {skill(skillHaskellImg , "Haskell"           , 3)}
                 {skill(skillPythonImg  , "Python"            , 2)}
                 {skill(skillMatlabImg  , "Matlab"            , 1)}
@@ -246,12 +242,12 @@ export function Cv1(props) {
             </div>
           </aside>
 
-          <main className="Cv1__main">
-            <section className="Cv1__studies">
-              <h3 className="Cv1__sectionHeader">{props.t("studies")}</h3>
+          <main className="Cv__main">
+            <section className="Cv__studies">
+              <h3 className="Cv__sectionHeader">{t("studies")}</h3>
               {studies(
                 upgradehubImg,
-                props.t("bootcamp"),
+                t("bootcamp"),
                 "2020 - 2021",
                 "Upgrade Hub"
               )}
@@ -259,11 +255,11 @@ export function Cv1(props) {
                 utretchImg,
                 "Applied Functional Programming in Haskell",
                 "2017",
-                props.t("utretchUni")
+                t("utretchUni")
               )}
               {studies(
                 ucmImg,
-                props.t("mathsDegree"),
+                t("mathsDegree"),
                 "2011 - 2017",
                 "Universidad Complutense de Madrid"
               )}
@@ -275,25 +271,25 @@ export function Cv1(props) {
               )}
               {studies(
                 stmichaelsImg,
-                props.t("basicEducation"),
+                t("basicEducation"),
                 "1996 - 2008",
-                props.t("stMichaels")
+                t("stMichaels")
               )}
             </section>
 
-            <section className="Cv1__work">
-              <h3 className="Cv1__sectionHeader">{props.t("workExperience")}</h3>
+            <section className="Cv__work">
+              <h3 className="Cv__sectionHeader">{t("workExperience")}</h3>
               {work(
-                props.t("workExp2_title"),
+                t("workExp2_title"),
                 "2017",
                 "Pickmister.com",
-                props.t("workExp2_desc")
+                t("workExp2_desc")
               )}
               {work(
-                props.t("workExp1_title"),
+                t("workExp1_title"),
                 "2010 - 2012",
-                props.t("workExp1_location"),
-                props.t("workExp1_desc")
+                t("workExp1_location"),
+                t("workExp1_desc")
               )}
             </section>
           </main>

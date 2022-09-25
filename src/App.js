@@ -4,6 +4,7 @@ import {useTranslation} from 'react-i18next';
 
 import { LangContextProvider } from "core/contexts/LangContext";
 import { LangNav } from "core/layout/LangNav/LangNav";
+import { Cv   } from "pages/Cv/Cv";
 import { Home } from "pages/Home/Home";
 import "./i18n";
 
@@ -20,7 +21,8 @@ function App() {
         <div className="App">
           <LangNav/>
           <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/cv" element={<Cv/>}/>
+            <Route path="/"   element={<Home/>}/>
           </Routes>
         </div>
       </LangContextProvider>
