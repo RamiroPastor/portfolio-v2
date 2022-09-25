@@ -3,7 +3,9 @@
 
 module Main where
 
+import SvgIcons.Core.Geometry
 import SvgIcons.Core.Render
+import SvgIcons.Core.Utils
 import SvgIcons.Images
 import           Text.Blaze.Svg11 ((!))
 import           Text.Blaze.Svg11 as S
@@ -14,6 +16,7 @@ import           Text.Blaze.Svg11.Attributes as A
 main :: IO ()
 main = do
   renderMosaics
+  renderToCv
   renderToReact
 
 
@@ -39,6 +42,16 @@ renderMosaics =
     ]
 
 
+renderToCv :: IO ()
+renderToCv =
+  renderSvgFiles
+    "./src/assets/cv/"
+    [ (,) "langFR" fr
+    , (,) "langES" es
+    , (,) "langEN" uk
+    ]
+
+
 renderToReact :: IO ()
 renderToReact =
   renderSvgReact
@@ -46,3 +59,16 @@ renderToReact =
     [ (,) "flagES" (es ! A.preserveaspectratio "xMidYMid slice")
     , (,) "flagUK" (uk ! A.preserveaspectratio "xMidYMid slice")
     ]
+
+
+  
+logo :: Svg
+logo =
+    svg
+      ! A.viewbox "-1 -1 2 2"
+      ! A.height "100px"
+      ! A.width  "100px"
+      $ do
+        regularPolygon 5 1.9 (0,0)
+          ! A.stroke "deeppink"
+          ! (A.strokeWidth "0.05")

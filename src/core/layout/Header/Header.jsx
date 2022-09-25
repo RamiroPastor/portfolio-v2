@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Logo } from "core/layout/Logo/Logo";
-import { Nav  } from "core/layout/Nav/Nav"; 
+// import { Logo } from "core/layout/Logo/Logo";
+// import { Nav  } from "core/layout/Nav/Nav"; 
 
 
 
@@ -11,8 +11,7 @@ export function Header(props) {
   return(
     <header className="Header">
       <div className="Header__inner">
-        <Logo/>
-        <Nav/>
+        logo
       </div>
     </header>
   )

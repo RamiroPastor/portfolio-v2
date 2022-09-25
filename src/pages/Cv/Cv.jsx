@@ -3,8 +3,8 @@ import React, { useContext } from "react";
 
 import cambridgeImgUrl      from "assets/cv/cambridge.jpg";
 import emailImgUrl          from "../../assets/cv/email.svg";
-import langEnImgUrl         from "assets/cv/langEN.png";
-import langEsImgUrl         from "assets/cv/langES.png";
+import langEnImgUrl         from "assets/cv/langEN.svg";
+import langEsImgUrl         from "assets/cv/langES.svg";
 import langFrImgUrl         from "assets/cv/langFR.svg";
 import locationImgUrl       from "assets/cv/location.svg";
 import myPhotoImgUrl        from "assets/cv/MyPhoto.jpg";

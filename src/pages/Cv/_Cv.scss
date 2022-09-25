@@ -212,11 +212,13 @@ $sidebarBackground: rgb(230, 230, 255);
     margin-top: 1.8rem;
   }
   img {
-    border-radius: 200px;
     --x: 2.4rem;
     height: var(--x);
     width: var(--x);
     margin-bottom: 1rem;
+    border-radius: 200px;
+    box-shadow: 0 0 0 1px gray;
+    object-fit: cover;
   }
   span {
     display: none;

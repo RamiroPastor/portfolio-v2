@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import {useTranslation} from 'react-i18next';
 
 import { LangContextProvider } from "core/contexts/LangContext";
+import { Header  } from "core/layout/Header/Header";
 import { LangNav } from "core/layout/LangNav/LangNav";
 import { Cv   } from "pages/Cv/Cv";
 import { Home } from "pages/Home/Home";
@@ -19,6 +20,7 @@ function App() {
     <Router>
       <LangContextProvider t={t} i18n={i18n}>
         <div className="App">
+          <Header/>
           <LangNav/>
           <Routes>
             <Route path="/cv" element={<Cv/>}/>
