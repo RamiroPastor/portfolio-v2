@@ -18,7 +18,7 @@ main = do
   renderMosaics
   renderToCv
   renderToReact
-  renderImages
+  renderFavicon
 
 
 
@@ -63,10 +63,10 @@ renderToReact =
     ]
 
 
-renderImages :: IO ()
-renderImages =
+renderFavicon :: IO ()
+renderFavicon =
   renderSvgFiles
-    "./src/assets/img/"
+    "./public/assets/img/"
     [ (,) "favicon" myLogo
     ]
 
