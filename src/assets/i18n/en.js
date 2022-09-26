@@ -1,9 +1,7 @@
 export const en =
-  { home: "home"
-  , learning: "learning"
-  , projects: "projects"
+  { projects: "projects"
+  , svgIcons: "svg icons"
   , curriculum: "curriculum"
-  , contact: "contact"
   // Home page
   // Curriculum
   , cvDesc1: "Mathematician, programmer and web developer (UX/UI & frontend)."

@@ -3,9 +3,12 @@
 
 module Main where
 
+import Control.Arrow
 import SvgIcons.Core.Geometry
 import SvgIcons.Core.Render
+import SvgIcons.Core.Style
 import SvgIcons.Core.Utils
+import SvgIcons.Icons
 import SvgIcons.Images
 import           Text.Blaze.Svg11 ((!))
 import           Text.Blaze.Svg11 as S
@@ -19,7 +22,7 @@ main = do
   renderToCv
   renderToReact
   renderFavicon
-
+  renderIcons
 
 
 
@@ -71,6 +74,20 @@ renderFavicon =
     ]
 
 
+renderIcons :: IO ()
+renderIcons =
+  renderSvgReact 
+    "./src/assets/svg/"
+    $ map 
+      ( ( stdDims 
+        . strkStyle
+        ) `second`
+      )
+      [ (,) "document"  document
+      , (,) "briefcase" briefcase
+      , (,) "lambda"    lambda
+      ]
+
 
 
   
@@ -88,7 +105,7 @@ myLogo =
           ! A.transform (translate 0 (-0.1) <> rotateAround 180 0 0)
         S.g
           ! A.strokeWidth   "0.07"
-          ! A.stroke        "navy"
+          ! A.stroke        "indigo"
           ! A.strokeLinecap "round"
           ! A.fill          "none"
           ! A.transform (translate 0 (-0.05))
@@ -110,6 +127,11 @@ myLogo =
             S.path
               ! A.d dirs4
               ! A.transform horizontalMirrorMatrix
+        S.path
+          ! A.strokeWidth "0.05"
+          ! A.stroke      "purple"
+          ! A.fill        "none"
+          ! A.d dirs5
   where
     x1 =  0.17
     x2 =  0.29
@@ -161,4 +183,20 @@ myLogo =
       m   x12  y1
       q   x13  y13  x14  y14
       s   x15  y15  x16  y16
+    x17 =  0.15
+    x18 =  0.03
+    y17 =  y18 - 0.1
+    y18 = -0.42
+    y19 =  y18 + 0.1
+    dirs5 = mkPath $ do
+      m   (-x17)  y17
+      l   (-x18)  y17
+      m   ( x18)  y17
+      l   ( x17)  y17
+      m   (-x17)  y18
+      l   ( x17)  y18
+      m   (-x17)  y19
+      l   (-x18)  y19
+      m   ( x18)  y19
+      l   ( x17)  y19
 

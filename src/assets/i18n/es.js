@@ -1,9 +1,7 @@
 export const es =
-  { home: "inicio"
-  , learning: "aprendizaje"
-  , projects: "proyectos"
+  { projects: "proyectos"
+  , svgIcons: "iconos svg"
   , curriculum: "currículo"
-  , contact: "contacto"
   // Home page
   // Curriculum
   , cvDesc1: "Matemático, programador y desarrollador web (UX/UI y frontend)."
