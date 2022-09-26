@@ -7,4 +7,10 @@
     width:  $headerH;
     margin-right: 1rem;
   }
+  &__text {
+    font-family: "Monoton", serif;
+    font-size: 3.3rem;
+    font-weight: 400;
+    color: rgb(0,0,51);
+  }
 }

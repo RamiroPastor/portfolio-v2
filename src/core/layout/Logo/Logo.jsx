@@ -9,7 +9,9 @@ export function Logo(props) {
   return(
     <a className="Logo" href="/">
       {myLogo}
-      <strong>RPM</strong>
+      <span className="Logo__text">
+        RPM
+      </span>
     </a>
   )
 }
