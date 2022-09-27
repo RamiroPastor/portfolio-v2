@@ -62,7 +62,7 @@ renderToReact =
     "./src/assets/svg/"
     [ (,) "flagES" (es ! A.preserveaspectratio "xMidYMid slice")
     , (,) "flagUK" (uk ! A.preserveaspectratio "xMidYMid slice")
-    , (,) "myLogo" myLogo
+    , (,) "myLogo"  myLogo
     ]
 
 
@@ -79,13 +79,10 @@ renderIcons =
   renderSvgReact 
     "./src/assets/svg/"
     $ map 
-      ( ( stdDims 
-        . strkStyle
-        ) `second`
-      )
-      [ (,) "document"  document
-      , (,) "briefcase" briefcase
-      , (,) "lambda"    lambda
+      ( ( stdDims . strkStyle) `second` )
+      [ (,) "briefcase" briefcase
+      , (,) "document"  document
+      , (,) "haskell"   haskell
       ]
 
 
@@ -100,12 +97,12 @@ myLogo =
       $ do
         regularPolygon 5 0.98 (0,0)
           ! A.strokeWidth "0.05"
-          ! A.stroke      "navy"
+          ! A.stroke      "black"
           ! A.fill        "none"
           ! A.transform (translate 0 (-0.1) <> rotateAround 180 0 0)
         S.g
-          ! A.strokeWidth   "0.07"
-          ! A.stroke        "indigo"
+          ! A.strokeWidth   "0.05"
+          ! A.stroke        "black"
           ! A.strokeLinecap "round"
           ! A.fill          "none"
           ! A.transform (translate 0 (-0.05))
@@ -129,7 +126,7 @@ myLogo =
               ! A.transform horizontalMirrorMatrix
         S.path
           ! A.strokeWidth "0.05"
-          ! A.stroke      "purple"
+          ! A.stroke      "black"
           ! A.fill        "none"
           ! A.d dirs5
   where

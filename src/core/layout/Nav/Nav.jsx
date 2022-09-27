@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import { briefcase } from "assets/svg/briefcase";
 import { document  } from "assets/svg/document";
-import { lambda    } from "assets/svg/lambda";
+import { haskell   } from "assets/svg/haskell";
 import { LangContext } from "core/contexts/LangContext";
 
 
@@ -18,7 +18,7 @@ export function Nav(props) {
         <strong>{t("projects")}</strong>
       </NavLink>
       <NavLink className="Nav__link" to="/svg-icons">
-        { lambda }
+        { haskell }
         <strong>{t("svgIcons")}</strong>
       </NavLink>
       <NavLink className="Nav__link" to="/cv">

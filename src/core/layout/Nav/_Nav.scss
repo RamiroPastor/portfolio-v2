@@ -11,7 +11,7 @@
     height: 100%;
     width: 1.618 * $headerH;
     &:hover {
-      box-shadow: 0 -2px 0 0 $color inset;
+      box-shadow: 0 -1px 0 0 $color inset;
     }
     svg {
       $x: 3.6rem;
@@ -19,6 +19,9 @@
       width: $x;
       stroke: $color;
       fill: $color;
+      path {
+        fill: none;
+      }
     }
     strong {
       margin-top: 0.5rem;
