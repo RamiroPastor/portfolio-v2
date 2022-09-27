@@ -30,7 +30,7 @@ renderMosaics :: IO ()
 renderMosaics =
   renderSvgFiles 
     "./src/assets/mosaics/"
-    [ (,) "nazariMosaic"       (nazariMosaic "mistyrose" "gainsboro")
+    [ (,) "nazariMosaic"       (nazariMosaic "orange" "purple")
     , (,) "mosaicPajarita"     (nazariMosaic "white"     "transparent")
     , (,) "triReligiousMosaic" (triReligiousMosaic "transparent" "orange" "green")
     , (,) "hexagonsMosaic"     (hexagonsMosaic "navy" "none")

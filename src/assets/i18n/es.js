@@ -30,13 +30,4 @@ export const es =
   , native: "Nativo"
   , professional: "Profesional"
   , beginner: "Principiante"
-  // Learning
-  , go: "ir"
-  , projectGoT: "Proyecto en equipo con React; utiliza una api externa de juego de tronos"
-  , projectShopeame: "Proyecto individual con Angular; utiliza una api simulada, puede tardar"
-  , projectTrivial: "Proyecto individual con vanilla Js; utiliza una api externa para las preguntas"
-  , projectRPG: "Proyecto individual con vanilla Js"
-  // Not Found
-  , notFound: "No encontrado"
-  , hordesOfHell: "Las hordas del Infierno se acercan"
   }
