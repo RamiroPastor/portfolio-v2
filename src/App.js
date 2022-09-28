@@ -5,8 +5,9 @@ import {useTranslation} from 'react-i18next';
 import { LangContextProvider } from "core/contexts/LangContext";
 import { Header  } from "core/layout/Header/Header";
 import { LangNav } from "core/layout/LangNav/LangNav";
-import { Cv   } from "pages/Cv/Cv";
-import { Home } from "pages/Home/Home";
+import { Contact  } from "pages/Contact/Contact";
+import { Cv       } from "pages/Cv/Cv";
+import { Home     } from "pages/Home/Home";
 import { SvgIcons } from "pages/SvgIcons/SvgIcons";
 import "./i18n";
 
@@ -28,6 +29,7 @@ function App() {
               <Route path="/"         element={<Home/>}/>
               <Route path="svg-icons" element={<SvgIcons/>}/>
               <Route path="/cv"       element={<Cv/>}/>
+              <Route path="/eu-omnibus-2019-2161" element={<Contact/>}/>
             </Routes>
           </main>
         </div>

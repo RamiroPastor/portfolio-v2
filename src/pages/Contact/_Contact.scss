@@ -1,0 +1,19 @@
+.Contact {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 2px dotted black;
+    h3 {
+      margin-bottom: 3rem;
+      text-decoration: underline;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
