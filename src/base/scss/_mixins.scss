@@ -4,6 +4,7 @@
   $scrollbarColor: rgb(120, 150, 220);
   $scrollbarBackground: rgb(240, 240, 240);
   scrollbar-width: thin;
+  scrollbar-height: thin;
   scrollbar-color: $scrollbarColor $scrollbarBackground;
   &::-webkit-scrollbar {
     width: 5px;

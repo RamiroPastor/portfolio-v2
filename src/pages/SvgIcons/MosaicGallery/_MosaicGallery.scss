@@ -32,12 +32,12 @@
     }
     &--beehive {
       background: linear-gradient(
-      60deg,
-      rgba(255, 255, 0, 0.5),
-      rgba(255, 215, 0, 0.6),
-      rgba(255, 165, 0, 0.7),
-      rgba(255, 140, 0, 0.8),
-      rgba(178, 34, 34, 0.7)
+        60deg,
+        rgba(255, 255, 0, 0.5),
+        rgba(255, 215, 0, 0.6),
+        rgba(255, 165, 0, 0.7),
+        rgba(255, 140, 0, 0.8),
+        rgba(178, 34, 34, 0.7)
       ),
       linear-gradient(
         -60deg,
@@ -54,78 +54,67 @@
     align-items: center;
     width: 100%;
     min-height: 90vh;
+    padding: 30rem 1rem;
     background-repeat: repeat;
     background-position: center;
     &--nazari {
       $x: 4.9rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/nazariMosaic.svg");
       background-size: $x ($x * math.sqrt(3));
     }
     &--triReligious {
       $x: 6rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/triReligiousMosaic.svg");
       background-size: $x ($x * math.sqrt(3));
       background-position: (-0.5 * $x) 0;
     }
     &--hexagons {
       $x: 6rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/hexagonsMosaic.svg");
       background-size: $x ($x * math.sqrt(3));
     }
     &--beehive {
       $x: 6rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/beehiveMosaic.svg");
       background-size: $x ($x * math.sqrt(3));
     }
     &--lemons {
       $x: 7rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/lemonsMosaic.svg");
       background-size: (0.85 * $x) $x;
     }
     &--arabic {
       $x: 10rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/arabicMosaic.svg");
       background-size: $x;
     }
     &--people {
       $x: 5rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/peopleMosaic.svg");
       background-size: $x;
     }
     &--hex {
       $x: 12rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/hexMosaic.svg");
       background-size: ($x * math.sqrt(3)) $x;
     }
     &--arrows {
       $x: 6rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/arrowsMosaic.svg");
       background-size: $x ($x * math.sqrt(3));
     }
     &--wires {
       $x: 30rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/wiresMosaic.svg");
       background-size: $x;
     }
     &--curves {
       $x: 9rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/curvesMosaic.svg");
       background-size: $x;
     }
     &--airplane {
       $x: 8rem;
-      padding: 2rem;
       background-image: url("../../../assets/mosaics/airplaneMosaic.svg");
       background-size: $x;
     }
