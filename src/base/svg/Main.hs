@@ -3,7 +3,7 @@
 
 module Main where
 
-import Control.Arrow
+import Control.Arrow (second)
 import SvgIcons.Core.Geometry
 import SvgIcons.Core.Render
 import SvgIcons.Core.Style
