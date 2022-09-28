@@ -3,6 +3,15 @@ export const en =
   , svgIcons: "svg icons"
   , curriculum: "curriculum"
   // Home page
+  // SvgIcons
+  , svgDoneWith: "SVG done with"
+  , svgIcons_t1: "After coding some SVG icons and images for multiple projects using the "
+  , svgIcons_t2: " Haskell package, I have collected all that work into my own Haskell package. "
+  , svgIcons_t3: "You can find all icons and images, together with the official documentation, here: "
+  , svgIcons_t4: "Some of those images are designed to work as mosaic tiles, and it is hard to appreciate how the full mosaic works by only looking at the basic tile. "
+  , svgIcons_t5: "Consequently, I have made this page for illustration and didactic purposes."
+  , svgIcons_t6: "Below this introduction, you will find the Haskell code that generates most of the SVGs used in this website (my portfolio). "
+  , svgIcons_t7: "Afterwards, you will find a sample of every mosaic from the package "
   // Curriculum
   , cvDesc1: "Mathematician, programmer and web developer (UX/UI & frontend)."
   , cvDesc2: "Self-taught, creative, perfectionist; I achieve simple and elegant solutions. I love clean, concise and reusable code."
