@@ -34,7 +34,12 @@ export function Projects(props) {
           category     = {t("svgIcons_category")}
           technologies = "Haskell, SVG"
           repository   = "https://github.com/RamiroPastor/SvgIcons"
-          synopsis     = {t("svgIcons_synopsis")}
+          synopsis     = {
+            <>
+              <p>{t("svgIcons_synopsis1")}</p>
+              <p>{t("svgIcons_synopsis2")}</p>
+            </>
+          }
         />
 
         <Project
@@ -46,7 +51,11 @@ export function Projects(props) {
           category     = {t("ioracle_category")}
           technologies = "Nextjs"
           repository   = {null}
-          synopsis     = {t("ioracle_synopsis")}
+          synopsis     = {
+            <>
+             <p>{t("ioracle_synopsis")}</p>
+            </>
+          }
         />
 
         <Project
