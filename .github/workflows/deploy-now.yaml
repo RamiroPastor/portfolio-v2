@@ -35,10 +35,10 @@ jobs:
         if: ${{ steps.project.outputs.deployment-enabled == 'true' }}
         env:
           CI: true
-          REACT_APP_MYADDRESS1: ${{ secrets.REACT_APP_MYADDRESS1 }}
-          REACT_APP_MYADDRESS2: "Boadilla del Monte, Madrid"
-          REACT_APP_MYADDRESS3: "España, Unión Europea"
-          REACT_APP_MYPHONE: "+34 659687162"
+          REACT_APP_MYADDRESS1: Calle Río Arlanzón 14
+          REACT_APP_MYADDRESS2: Boadilla del Monte, Madrid
+          REACT_APP_MYADDRESS3: España, Unión Europea
+          REACT_APP_MYPHONE: +34 659687162
           SITE_URL: ${{ steps.project.outputs.site-url }}
         run: |
           npm ci
@@ -52,4 +52,4 @@ jobs:
           branch-id: ${{ steps.project.outputs.branch-id }}
           service-host: api-eu.ionos.space
           api-key: ${{ secrets.IONOS_API_KEY }}
-          dist-folder: public
+          dist-folder: build
