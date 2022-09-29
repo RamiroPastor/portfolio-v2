@@ -43,6 +43,8 @@ renderMosaics =
     , (,) "wiresMosaic"        (wiresMosaic  "gray")
     , (,) "curvesMosaic"        curvesMosaic
     , (,) "airplaneMosaic"     (airplaneMosaic "deepskyblue")
+    , (,) "octagonsMosaic1"    (octagonsMosaic "lightgray" "chocolate")
+    , (,) "octagonsMosaic2"    (octagonsMosaic "white" "white")
     ]
 
 
@@ -196,4 +198,3 @@ myLogo =
       l   (-x18)  y19
       m   ( x18)  y19
       l   ( x17)  y19
-

@@ -201,7 +201,7 @@ export function MosaicGallery(props) {
   background-image: url("../../../assets/mosaics/curvesMosaic.svg");
   background-size: $x;
 }
-            `}
+          `}
           </MosaicCode>
       </div>
 
@@ -213,6 +213,20 @@ export function MosaicGallery(props) {
 &--airplane {
   $x: 8rem;
   background-image: url("../../../assets/mosaics/airplaneMosaic.svg");
+  background-size: $x;
+}
+          `}
+          </MosaicCode>
+      </div>
+
+      <div className="MosaicGallery__mosaic MosaicGallery__mosaic--octagons">
+          <MosaicCode
+            mosaicName="octagons"
+            haskell='octagonsMosaic "lightgray" "chocolate"'
+          >{`
+&--octagons {
+  $x: 4rem;
+  background-image: url("../../../assets/mosaics/octagonsMosaic1.svg");
   background-size: $x;
 }
           `}

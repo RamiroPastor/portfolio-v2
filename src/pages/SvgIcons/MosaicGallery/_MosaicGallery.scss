@@ -118,5 +118,10 @@
       background-image: url("../../../assets/mosaics/airplaneMosaic.svg");
       background-size: $x;
     }
+    &--octagons {
+      $x: 4rem;
+      background-image: url("../../../assets/mosaics/octagonsMosaic1.svg");
+      background-size: $x;
+    }
   }
 }
