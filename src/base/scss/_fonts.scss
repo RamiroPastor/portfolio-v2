@@ -30,11 +30,20 @@
   font-weight: 400;
 }
 
-// Didact Gothic
+// NotoSerifTC
 
 @font-face {
-  font-family: DidactGothic;
-  src: url(../../assets/fonts/DidactGothic-Regular.ttf);
+  font-family: ChineseSerif;
+  src: url(../../assets/fonts/NotoSerifTC-Medium.otf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+// Shojumaru
+
+@font-face {
+  font-family: Shojumaru;
+  src: url(../../assets/fonts/Shojumaru-Regular.ttf);
   font-style: normal;
   font-weight: 400;
 }
