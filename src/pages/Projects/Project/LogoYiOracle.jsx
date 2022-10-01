@@ -12,7 +12,7 @@ export function LogoYiOracle(props) {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 6 1"
-      className="Logo__img"
+      // className="Logo__img"
     >
       <defs>
         <linearGradient 

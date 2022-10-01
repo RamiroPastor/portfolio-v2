@@ -1,9 +1,11 @@
 import React, { useContext} from "react";
 
+
 import ehv        from "assets/img/ehv-logo.webp";
 import haskell    from "assets/img/haskell-logo.svg";
 import { LangContext } from "core/contexts/LangContext";
 import { Project      } from "./Project/Project";
+import { LogoCloister } from "./Project/LogoCloister";
 import { LogoYiOracle } from "./Project/LogoYiOracle";
 
 
@@ -15,6 +17,7 @@ export function Projects(props) {
 
   const ehvImg     = <img alt="" src={ehv}/>;
   const haskellImg = <img alt="" src={haskell}/>;
+
 
 
   return(
@@ -38,6 +41,23 @@ export function Projects(props) {
             <>
               <p>{t("svgIcons_synopsis1")}</p>
               <p>{t("svgIcons_synopsis2")}</p>
+            </>
+          }
+        />
+
+        <Project
+          t={t}
+          name         = {t("cloister_name")}
+          url          = "https://claustro.vercel.app"
+          image        = {<LogoCloister t={t}/>}
+          date         = {2022}
+          category     = {t("cloister_category")}
+          technologies = "Typescript, Nextjs, MongoDB"
+          repository   = "https://github.com/RamiroPastor/Claustro"
+          synopsis     = {
+            <>
+              <p>{t("cloister_synopsis1")}</p>
+              <p>{t("cloister_synopsis2")}</p>
             </>
           }
         />
