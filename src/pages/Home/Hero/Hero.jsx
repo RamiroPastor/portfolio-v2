@@ -31,7 +31,7 @@ export function Hero(props){
       let x0 = 50;
       let y0 = 50;
 
-      let n  = Math.floor(Math.random() * 7 + 3);
+      let n  = Math.floor(Math.random() * 5 + 3);
 
       let color = getRandomColor();
 
@@ -51,7 +51,7 @@ export function Hero(props){
         { n   : n
         , x0  : x0
         , y0  : y0
-        , r   : 40
+        , r   : 34
         , as  : as
         , w   : 6
         , col : color
