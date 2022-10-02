@@ -15,12 +15,12 @@ export function Hero(props){
 
 
   function getRandomColor() {
-    var letters = '0123456789ABCDEF';
+    var letters = '0123456789AB';
     var color = '#';
     for (var i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
+      color += letters[Math.floor(Math.random() * 12)];
     }
-    return color+"90";
+    return color+"";
   }
 
 
