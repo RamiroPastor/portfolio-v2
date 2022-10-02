@@ -3,6 +3,7 @@ export const en =
   , svgIcons: "svg icons"
   , curriculum: "curriculum"
   // Home page
+  , welcome: "Welcome"
   // Projects
   , date: "date"
   , category: "category"

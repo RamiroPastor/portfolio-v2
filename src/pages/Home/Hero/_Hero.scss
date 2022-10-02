@@ -1,0 +1,18 @@
+.Hero {
+  position: absolute;
+  top: calc(50% - 49vmin);
+  left: calc(50% - 49vmin);
+  width: 98vmin;
+  height: 98vmin;
+  &__wanderer {
+    position: absolute;
+    top: calc(var(--y) - 0.5*var(--w));
+    left: calc(var(--x) - 0.5*var(--w));
+    width: var(--w);
+    height: var(--w);
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
