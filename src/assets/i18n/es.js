@@ -18,7 +18,7 @@ export const es =
   , svgIcons_synopsis2: "Para aprender el funcionamiento de la librería, se puede estudiar la documentación oficial disponible en el propio paquete. También se pueden ver los mosaicos en su plenitud en esta misma página web."
   , cloister_name: "Claustro"
   , cloister_category: "Foro online"
-  , cloister_synopsis1: "Foro online que desarrollé como parte de un proceso de selección para una empresa, me llevó unos 14 días llegra al estado actual del proyecto."
+  , cloister_synopsis1: "Foro online que desarrollé como parte de un proceso de selección para una empresa, me llevó unos 14 días llegar al estado actual del proyecto."
   , cloister_synopsis2: "Los requisitos de la prueba técnica eran inicialmente mucho más simples, y no me exigían desarrollar un foro completamente funcional. Sin embargo, quise aprovechar la oportunidad para aprender más de Nextjs, por lo que decidí construir algo más complejo que la aplicación sencilla que me pedían. También trabajé en mis habilidades de Typescript, que sí era un requisito inicial de la prueba."
   , oracle: "oráculo"
   , of: "del"
