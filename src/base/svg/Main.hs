@@ -37,7 +37,7 @@ renderMosaics =
     , (,) "beehiveMosaic"       beehiveMosaic
     , (,) "lemonsMosaic"       (lemonsMosaic "gold")
     , (,) "arabicMosaic"       (arabicMosaic "blue" "brown")
-    , (,) "peopleMosaic"       (peopleMosaic "silver" "white")
+    , (,) "cloudsMosaic"       (cloudsMosaic "silver" "white")
     , (,) "hexMosaic"          (hexMosaic    "limegreen")
     , (,) "arrowsMosaic"       (arrowsMosaic "orange")
     , (,) "wiresMosaic"        (wiresMosaic  "gray")

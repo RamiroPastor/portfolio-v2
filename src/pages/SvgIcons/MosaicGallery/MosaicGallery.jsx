@@ -135,14 +135,14 @@ export function MosaicGallery(props) {
           </MosaicCode>
       </div>
 
-      <div className="MosaicGallery__mosaic MosaicGallery__mosaic--people">
+      <div className="MosaicGallery__mosaic MosaicGallery__mosaic--clouds">
           <MosaicCode
-            mosaicName="people"
-            haskell='peopleMosaic "silver" "white"'
+            mosaicName="clouds"
+            haskell='cloudsMosaic "silver" "white"'
           >{`
-&__mosaic--people {
+&__mosaic--clouds {
   $x: 5rem;
-  background-image: url("../../../assets/mosaics/peopleMosaic.svg");
+  background-image: url("../../../assets/mosaics/cloudsMosaic.svg");
   background-size: $x;
 }
           `}
