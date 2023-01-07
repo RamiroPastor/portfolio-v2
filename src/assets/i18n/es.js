@@ -27,9 +27,9 @@ export const es =
   , ioracle_name: "Oráculo del I Ching"
   , ioracle_category: "Libro de los Cambios"
   , ioracle_synopsis: "Página web sobre el I Ching, el Libro de las Mutaciones (o de los Cambios). Se informa muy brevemente de la historia del libro, que tiene tres milenios de antigüedad, y se ofrecen servicios de consulta por un precio irrisorio."
-  , ehv_name: "Egipto Historia Viva"
-  , ehv_category: "tienda online"
-  , ehv_synopsis: "Tienda online de réplicas de antigüedades egipcias."
+  // , ehv_name: "Egipto Historia Viva"
+  // , ehv_category: "tienda online"
+  // , ehv_synopsis: "Tienda online de réplicas de antigüedades egipcias."
   // SvgIcons
   , svgDoneWith: "SVG hechos con"
   , svgIcons_t1: "Después de escribir muchas imágenes e iconos en SVG usando el paquete de Haskell "

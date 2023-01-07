@@ -27,9 +27,9 @@ export const en =
   , ioracle_name: "Yi Ching Oracle"
   , ioracle_category: "Book of Changes"
   , ioracle_synopsis: "Website about the Yi Ching, the Book of Mutations (or Changes). A very brief history of the book is exposed (the book is three millenia old), and services for consulting the book are offered at a very modest price."
-  , ehv_name: "Egipto Historia Viva"
-  , ehv_category: "e-shop"
-  , ehv_synopsis: "Online shop selling replicas of Egyptian antiquities."
+  // , ehv_name: "Egipto Historia Viva"
+  // , ehv_category: "e-shop"
+  // , ehv_synopsis: "Online shop selling replicas of Egyptian antiquities."
   // SvgIcons
   , svgDoneWith: "SVG done with"
   , svgIcons_t1: "After coding some SVG icons and images for multiple projects using the "

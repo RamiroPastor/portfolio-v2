@@ -1,7 +1,7 @@
 import React, { useContext} from "react";
 
 
-import ehv        from "assets/img/ehv-logo.webp";
+// import ehv        from "assets/img/ehv-logo.webp";
 import haskell    from "assets/img/haskell-logo.svg";
 import { LangContext } from "core/contexts/LangContext";
 import { Project      } from "./Project/Project";
@@ -15,7 +15,7 @@ export function Projects(props) {
   const t = useContext(LangContext).t;
 
 
-  const ehvImg     = <img alt="" src={ehv}/>;
+  // const ehvImg     = <img alt="" src={ehv}/>;
   const haskellImg = <img alt="" src={haskell}/>;
 
 
@@ -78,7 +78,7 @@ export function Projects(props) {
           }
         />
 
-        <Project
+        {/* <Project
           t={t}
           name         = {t("ehv_name")}
           url          = "https://home-5005749472.app-ionos.space"
@@ -88,7 +88,7 @@ export function Projects(props) {
           technologies = "Reactjs, Mongodb, Nodejs"
           repository   = {null}
           synopsis     = {t("ehv_synopsis")}
-        />
+        /> */}
       </div>
     </div>
   )
