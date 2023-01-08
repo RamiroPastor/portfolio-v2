@@ -14,7 +14,7 @@ export const es =
   , linkToProject: "enlace al proyecto"
   , synopsis: "sinopsis"
   , svgIcons_name: "Iconos svg con Haskell"
-  , svgIcons_category: "librería de Haskell"
+  , svgIcons_category: "Librería de Haskell"
   , svgIcons_synopsis1: "Imágenes e iconos en formato SVG hechos con el lenguaje de programación Haskell. La librería está disponible en Hackage, el archivo oficial de paquetes de Haskell."
   , svgIcons_synopsis2: "Para aprender el funcionamiento de la librería, se puede estudiar la documentación oficial disponible en el propio paquete. También se pueden ver los mosaicos en su plenitud en esta misma página web."
   , cloister_name: "Claustro"
