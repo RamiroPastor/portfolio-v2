@@ -42,4 +42,7 @@ main {
   height: 100%;
   width: 100%;
   padding-top: $headerH;
+  @include printer {
+    padding: 0;
+  }
 }
