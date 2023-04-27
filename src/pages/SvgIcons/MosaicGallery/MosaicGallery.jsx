@@ -233,6 +233,19 @@ export function MosaicGallery(props) {
           </MosaicCode>
       </div>
 
+      <div className="MosaicGallery__mosaic MosaicGallery__mosaic--pentagons">
+          <MosaicCode
+            mosaicName="pentagons"
+            haskell='pentagonsMosaic "deeppink" "black"'
+          >{`
+&--pentagons {
+  background-image: url("../../../assets/mosaics/pentagonsMosaic.svg");
+  background-size: 29rem auto;
+}
+          `}
+          </MosaicCode>
+      </div>
+
     </div>
   )
 }

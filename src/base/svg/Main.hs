@@ -45,6 +45,7 @@ renderMosaics =
     , (,) "airplaneMosaic"     (airplaneMosaic "deepskyblue")
     , (,) "octagonsMosaic1"    (octagonsMosaic "lightgray" "chocolate")
     , (,) "octagonsMosaic2"    (octagonsMosaic "white" "white")
+    , (,) "pentagonsMosaic"    (pentagonsMosaic "deeppink" "black")
     ]
 
 

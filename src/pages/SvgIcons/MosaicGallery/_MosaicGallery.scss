@@ -123,5 +123,9 @@
       background-image: url("../../../assets/mosaics/octagonsMosaic1.svg");
       background-size: $x;
     }
+    &--pentagons {
+      background-image: url("../../../assets/mosaics/pentagonsMosaic.svg");
+      background-size: 29rem auto;
+    }
   }
 }
