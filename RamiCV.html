@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RamiCV</title>
+  <meta name="description" content="Currículo de Rami">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      background-color: rgb(235,235,235);
+    }
+
+    body {
+      height: 100%;
+      padding: 10mm;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 14px;
+      color: rgb(0,0,64);
+    }
+
+    main {
+      position: relative;
+      width: 210mm;
+      margin: 0 auto;
+      background: white;
+    }
+
+    .header {
+      display: flex;
+      padding: 10mm 0;
+    }
+
+    .col-left {
+      display: inline-block;
+      width: 65%;
+      padding-left: 10mm;
+      padding-right: 6mm;
+    }
+
+    .col-right {
+      display: inline-block;
+      width: 35%;
+      padding-right: 10mm;
+      padding-left: 6mm;
+      border-left: 1.2mm solid royalblue;
+    }
+
+    .title {
+      height: 100%;
+      margin-left: -10mm;
+      padding-left: 5mm;
+      border-left: 5mm solid royalblue;
+      color: steelblue;
+    }
+    .title h1 {
+      margin-bottom: 2mm;
+    }
+    .title h2 {
+      font-size: 16px;
+    }
+
+    .contact {
+      display: block;
+      margin-right: -10mm;
+      padding: 3mm 5mm;
+      list-style-type: none;
+      color: white;
+      background-color: steelblue;
+    }
+    .contact li {
+      margin: 2mm 0;
+    }
+    .contact li .icon {
+      position: relative;
+      bottom: -0.5mm;
+      margin-right: 2mm;
+    }
+
+    .body {
+      display: flex;
+      padding-bottom: 10mm;
+    }
+    .section {
+      margin-bottom: 10mm;
+    }
+    .section h3 {
+      position: relative;
+      margin-bottom: 6mm;
+      text-transform: uppercase;
+    }
+    .section h3::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      bottom: -2mm;
+      width: 10mm;
+      height: 1.2mm;
+      background-color: royalblue;
+    }
+    .section h4 {
+      margin-bottom: 2mm;
+    }
+    .section h5 {
+      margin-bottom: 2mm;
+      color: steelblue;
+    }
+    .section p {
+      text-align: justify;
+    }
+
+    .skill-list {
+      margin-bottom: 5mm;
+      list-style-type: none;
+    }
+    .skill-list span {
+      display: inline-block;
+      width: 49%;
+    }
+    .skill-list meter {
+      display: inline-block;
+      width: 49%;
+    }
+    .skill-list meter::-webkit-meter-bar {
+      border-radius: 0;
+      border-color: silver;
+      background: none;
+      background-color: whitesmoke;
+    }
+    .skill-list meter::-webkit-meter-optimum-value {
+      background: none;
+      background: royalblue;
+    }
+
+    .period {
+      display: flex;
+      margin-bottom: 5mm;
+    }
+    .period-dates {
+      position: relative;
+      top: 0.3mm;
+      width: 20%;
+      font-size: 12px;
+    }
+    .period-content {
+      width: 80%;
+    }
+    .period-content p {
+      font-size: 12px;
+    }
+
+    @media print {
+      html {
+        display: table;
+        background-color: white;
+      }
+      body {
+        padding: 0;
+      }
+      footer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <div class="header">
+    <div class="col-left">
+      <div class="title">
+        <h1>
+          Rami <br/> SECO LÓPEZ
+        </h1>
+        <h2>
+          Mathematician and Web Developer
+        </h2>
+      </div>
+    </div>
+    <div class="col-right">
+      <ul class="contact">
+        <li>
+          <span class="icon">☎</span>
+          <span>+34 659687162</span>
+        </li>
+        <li>
+          <b class="icon">✉</b>
+          <span>ramir659@icloud.com</span>
+        </li>
+        <li>
+          <span class="icon">⛛</span>
+          <span>Madrid (Spain)</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col-left">
+      <div class="section">
+        <h3>Experience</h3>
+        <div class="period">
+          <div class="period-dates">
+            2019 - 2023
+          </div>
+          <div class="period-content">
+            <h4>Fullstack Developer</h4>
+            <h5>Freelance</h5>
+            <p>Developed multiple React projects and a Haskell library</p>
+          </div>
+        </div>
+        <div class="period">
+          <div class="period-dates">
+            2019
+          </div>
+          <div class="period-content">
+            <h4>React Frontend Developer</h4>
+            <h5>Egipto Historia Viva</h5>
+            <p>Frontend development of e-commerce</p>
+          </div>
+        </div>
+        <div class="period">
+          <div class="period-dates">
+            2018
+          </div>
+          <div class="period-content">
+            <h4>Junior Backend Developer</h4>
+            <h5>Pick Mister SL</h5>
+            <p>Backend Engineer for a fantasy football startup</p>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Education</h3>
+        <div class="period">
+          <div class="period-dates">
+            2017
+          </div>
+          <div class="period-content">
+            <h4>Applied Functional Programming in Haskell</h4>
+            <h5>Utrecht University</h5>
+            <p>Utrecht Summer School, intensive course on functional programming</p>
+          </div>
+        </div>
+        <div class="period">
+          <div class="period-dates">
+            2012 - 2018
+          </div>
+          <div class="period-content">
+            <h4>Degree in Mathematics</h4>
+            <h5>Universidad Complutense de Madrid</h5>
+            <p>Specialized in Computer Science in my last year</p>
+          </div>
+        </div>
+      </div>
+      <!--       
+      <div class="section">
+        <h3>References</h3>
+      </div> 
+      -->
+    </div>
+    <div class="col-right">
+      <div class="section">
+        <h3>Statement</h3>
+        <p>
+          Mathematician by training and coder by profession.
+          Passionate about learning and hard worker, I fulfill any task efficiently, quickly, effectively and elegantly. 
+          I try to bring my own point of view but I respect the hierarchy.
+        </p>
+      </div>
+      <div class="section">
+        <h3>Skills</h3>
+        <h4>Professional</h4>
+        <ul class="skill-list">
+          <li><span>HTML</span> <meter value="0.95">95%</meter></li>
+          <li><span>CSS</span>  <meter value="0.95">95%</meter></li>
+          <li><span>SVG</span>  <meter value="0.90">90%</meter></li>
+          <li><span>Haskell</span>    <meter value="0.70">70%</meter></li>
+          <li><span>Python</span>     <meter value="0.35">35%</meter></li>
+          <li><span>JavaScript</span> <meter value="0.70">70%</meter></li>
+          <li><span>React JS</span>   <meter value="0.85">85%</meter></li>
+          <li><span>Databases</span>  <meter value="0.50">50%</meter></li>
+          <li><span>Git</span>        <meter value="0.50">50%</meter></li>
+          <li><span>Unix OS</span>    <meter value="0.30">30%</meter></li>
+          <li><span>EPUB</span>       <meter value="0.60">60%</meter></li>
+        </ul>
+        <h4>Personal</h4>
+        <ul class="skill-list">
+          <li><span>Creativity</span>    <meter value="0.90">90%</meter></li>
+          <li><span>Communication</span> <meter value="0.75">75%</meter></li>
+          <li><span>Hard Work</span>     <meter value="0.85">85%</meter></li>
+        </ul>
+        <h4>Languages</h4>
+        <ul class="skill-list">
+          <li><span>Spanish</span> <meter value="0.95">95%</meter></li>
+          <li><span>English</span> <meter value="0.80">80%</meter></li>
+          <li><span>French</span>  <meter value="0.10">10%</meter></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>
+</body>
+</html>
