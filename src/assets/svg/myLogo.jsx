@@ -2,7 +2,7 @@ import React from 'react';
 
 export const myLogo = 
 <svg viewBox="-1 -1 2 2" height="100px" width="100px" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-    <path d="M 0.0,-0.98 L 0.93203545,-0.30283663 L 0.5760295,0.7928367 L -0.57602966,0.7928366 L -0.9320354,-0.30283678 L 1.7134865e-7,-0.98 Z" strokeWidth="0.05" stroke="black" fill="none" transform="translate(0.0 -0.1)rotate(180,0,0)" />
+    <path className="HaskellSvgIcons__regularPolygon" d="M 0.0,-0.98 L 0.93203545,-0.30283663 L 0.5760295,0.7928367 L -0.57602966,0.7928366 L -0.9320354,-0.30283678 L 1.7134865e-7,-0.98 Z" strokeWidth="0.05" stroke="black" fill="none" transform="translate(0.0 -0.1)rotate(180,0,0)" />
     <g strokeWidth="0.05" stroke="black" strokeLinecap="round" fill="none" transform="translate(0.0 -5.0e-2)">
         <path d="M 0.17,0.0 C 0.17,-0.2 0.29,-0.2 0.29 -0.4A 0.29,0.29 0.0 1,0 -0.29,-0.4 C -0.29,-0.2 -0.17,-0.2 -0.17 0.0Z" />
         <path d="M 0.17,0.0 A 0.17,0.17 0.0 1,0 0.45,-0.14 A 9.300539e-2,9.300539e-2 0.0 1,1 0.6,-0.25 " />
