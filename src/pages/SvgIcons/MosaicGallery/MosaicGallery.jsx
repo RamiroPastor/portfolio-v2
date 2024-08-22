@@ -246,6 +246,23 @@ export function MosaicGallery(props) {
           </MosaicCode>
       </div>
 
+      <div className="MosaicGallery__mosaicWrapper MosaicGallery__mosaicWrapper--hexCircles">
+        <div className="MosaicGallery__mosaic MosaicGallery__mosaic--hexCircles">
+            <MosaicCode
+              mosaicName="hexCircles"
+              haskell='hexCirclesMosaic "teal"'
+            >{`
+&--hexCircles {
+  $x: 10rem;
+  background-image: url("../../../assets/mosaics/hexCirclesMosaic.svg");
+  background-size: $x ($x * math.sqrt(3));
+}
+            `}
+            </MosaicCode>
+        </div>
+      </div>
+      
+
     </div>
   )
 }

@@ -47,6 +47,9 @@
         rgba(255, 140, 000, 0.5)
       );
     }
+    &--hexCircles {
+      background-color: #FFFF33;
+    }
   }
   &__mosaic {
     display: flex;
@@ -126,6 +129,11 @@
     &--pentagons {
       background-image: url("../../../assets/mosaics/pentagonsMosaic.svg");
       background-size: 29rem auto;
+    }
+    &--hexCircles {
+      $x: 10rem;
+      background-image: url("../../../assets/mosaics/hexCirclesMosaic.svg");
+      background-size: $x ($x * math.sqrt(3));
     }
   }
 }
