@@ -4,15 +4,17 @@ import React, { useContext} from "react";
 // import ehv        from "assets/img/ehv-logo.webp";
 import haskell    from "assets/img/haskell-logo.svg";
 import { LangContext } from "core/contexts/LangContext";
-import { Project      } from "./Project/Project";
-import { LogoCloister } from "./Project/LogoCloister";
-import { LogoYiOracle } from "./Project/LogoYiOracle";
+import { Project       } from "./Project/Project";
+import { LogoCloister  } from "./Project/LogoCloister";
+import { LogoLolRaffle } from "./Project/LogoLolRaffle";
+import { LogoYiOracle  } from "./Project/LogoYiOracle";
 
 
 
 export function Projects(props) {
 
   const t = useContext(LangContext).t;
+  const lang = useContext(LangContext).lang;
 
 
   // const ehvImg     = <img alt="" src={ehv}/>;
@@ -74,6 +76,22 @@ export function Projects(props) {
           synopsis     = {
             <>
              <p>{t("ioracle_synopsis")}</p>
+            </>
+          }
+        />
+
+        <Project
+          t={t}
+          name         = {t("lolraffle_name")}
+          url          = "https://lol-raffle.vercel.app/"
+          image        = {<LogoLolRaffle lang={lang}/>}
+          date         = {2023}
+          category     = {t("lolraffle_category")}
+          technologies = {t("lolraffle_techs")}
+          repository   = {null}
+          synopsis     = {
+            <>
+             <p>{t("lolraffle_synopsis")}</p>
             </>
           }
         />

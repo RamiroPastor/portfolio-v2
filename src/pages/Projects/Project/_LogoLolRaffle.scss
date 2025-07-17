@@ -1,0 +1,33 @@
+
+.LogoLolRaffle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 7rem 1rem;
+  background-color: black;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Beaufort', Times, serif;
+    font-weight: 700;
+    font-size: 4.5rem;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+  }
+  &__letter {
+    animation: colors1 3s linear 0s infinite;
+    &--0  {animation-delay: -3000ms;}
+    &--1  {animation-delay: -2750ms;}
+    &--2  {animation-delay: -2500ms;}
+    &--3  {animation-delay: -2250ms;}
+    &--4  {animation-delay: -2000ms;}
+    &--5  {animation-delay: -1750ms;}
+    &--6  {animation-delay: -1500ms;}
+    &--7  {animation-delay: -1250ms;}
+    &--8  {animation-delay: -1000ms;}
+    &--9  {animation-delay:  -750ms;}
+    &--10 {animation-delay:  -500ms;}
+    &--11 {animation-delay:  -250ms;}
+    &--12 {animation-delay:     0ms;}
+  }
+}
